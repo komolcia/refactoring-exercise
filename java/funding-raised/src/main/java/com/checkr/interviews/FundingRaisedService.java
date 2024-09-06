@@ -34,9 +34,9 @@ public class FundingRaisedService {
 		List<Map<String, String>> output = new ArrayList<>();
 
 		for (String[] csvDatum : csvData) {
-			Map<String, String> mapped = new HashMap<>();
-			putAllColumnsFromRecord(csvDatum, mapped);
-			output.add(mapped);
+			Map<String, String> result = new HashMap<>();
+			putAllColumnsFromRecord(csvDatum, result);
+			output.add(result);
 		}
 
 		return output;
